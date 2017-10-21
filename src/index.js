@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-//import App from './App.js';
-import Appd from './Applet.jsx';
-import registerServiceWorker from './registerServiceWorker';
-//import SignUpDialog from './Composition.js';
+import App from './components/Applet.jsx';
+import registerServiceWorker from './misc/registerServiceWorker';
 
-ReactDOM.render(<Appd />, document.getElementById('root'));
+
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

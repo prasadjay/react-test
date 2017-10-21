@@ -1,17 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './test.css'
+import '../css/test.css'
 import AlertContainer from 'react-alert'
-/*
-class Appd extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   // This binding is necessary to make `this` work in the callback
-  //   // this.handleClick = this.handleClick.bind(this);
-  // }
 
+class App extends React.Component {
   handleClick = () => {
-  //	this.msg.show(<AComponent aProp="some message" />)
     console.log('App', this);
     alert('this');
   }
@@ -26,13 +18,13 @@ class Appd extends React.Component {
  	 		</div>
     );
   }
-}*/
+}
 
 
-class Appd extends React.Component {
+class App1 extends React.Component {
   alertOptions = {
-    offset: 14,
-    position: 'bottom right',
+    offset: 20,
+    position: 'top right',
     theme: 'dark',
     time: 5000,
     transition: 'scale'
@@ -41,8 +33,8 @@ class Appd extends React.Component {
  
   showAlert = () => {
     this.msg.show('Some text or component', {
-      time: 2000,
-      type: 'success',
+      time: 5000,
+      type: 'warn',
       icon: <img src="path/to/some/img/32x32.png" />
     })
   }
@@ -57,5 +49,5 @@ class Appd extends React.Component {
   }
 }
 
-export default Appd;
+export default App;
 
