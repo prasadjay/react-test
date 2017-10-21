@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/Applet.jsx';
+import App from './components/app.js';
 import registerServiceWorker from './misc/registerServiceWorker';
 
 
