@@ -1,17 +1,26 @@
 import React from 'react';
 import '../css/app.css'
 import AlertContainer from 'react-alert'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import RaisedButton from 'material-ui/RaisedButton';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <Topbar/>
-      </div>
+      <Raisedbtn/>
     );
   }
 }
-  
+
+class Raisedbtn extends React.Component{
+  render() {
+    return [
+    <MuiThemeProvider>
+      <RaisedButton label="Default" />
+    </MuiThemeProvider>
+  ];
+  }
+}
 
 class Topbar extends React.Component{
   render() {
